@@ -40,7 +40,8 @@ jobs:
       - checkout
       - run:
           name: "echo an env var that is part of our project"
-          command: "echo $MY_ENV_NAME .... my name!"
+          command: |
+            echo $MY_ENV_NAME
 
 
 
