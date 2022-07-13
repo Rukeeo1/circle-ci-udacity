@@ -9,7 +9,7 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      -run: mkdir -p workspace
+      # -run: mkdir -p workspace
       -run:
         name: 'saving output'
         command: echo "Adding text to workspace folder" > workspace/echo-output
