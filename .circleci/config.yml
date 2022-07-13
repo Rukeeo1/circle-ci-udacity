@@ -33,5 +33,5 @@ jobs:
 workflows:
   save_hello_world_output_workflow:
     jobs:
-      - say-hello
-      - print_env_var
+      - save_hello_world_output
+      - print_output_file
