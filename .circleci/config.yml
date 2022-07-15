@@ -32,6 +32,12 @@ jobs:
       - attach_workspace:
           at: ~/
       - run: cat ~/output.txt
+  test_command:
+    docker:
+      - image: circleci/node:13.8.0
+    steps:
+      - print_pipeline_id:
+
 
 workflows:
   my_workflow:
